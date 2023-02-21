@@ -12,7 +12,6 @@ namespace Resh
     {
         static void Main(string[] args)
         {
-    
 
             Console.WriteLine(Task_1.Narcissistic(153));
             Console.ReadKey();  
