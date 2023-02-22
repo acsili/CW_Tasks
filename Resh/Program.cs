@@ -13,7 +13,7 @@ namespace Resh
         static void Main(string[] args)
         {
 
-            Console.WriteLine(Task_1.Narcissistic(153));
+            Console.WriteLine(Task_3.ToUnderscore("TestController"));
             Console.ReadKey();  
         }
 
