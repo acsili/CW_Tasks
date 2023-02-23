@@ -13,7 +13,7 @@ namespace Resh
         static void Main(string[] args)
         {
 
-            Console.WriteLine(Task_3.ToUnderscore("TestController"));
+            Console.WriteLine(Task_4.HasSurvived(new int[] { 3, 5, 77 }, new int[] { 5, 5, 5, 5 }));
             Console.ReadKey();  
         }
 
