@@ -13,7 +13,7 @@ namespace Resh
         static void Main(string[] args)
         {
 
-            Console.WriteLine(Task_5.Order("is2 Thi1s T4est 3a"));
+            Console.WriteLine(Task_6.FindEvenIndex(new int[] { 1, 100, 50, -51, 1, 1 }));
             Console.ReadKey();  
         }
 
