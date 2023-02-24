@@ -1,4 +1,3 @@
-### codewars tasks
+#### codewars tasks
 
-![a][def]
-[def]: D:\おはようございます\gifs\anime-aesthetic
+![anime-aesthetic](https://media.tenor.com/eu8Q-92AKpwAAAAC/anime-aesthetic.gif)
