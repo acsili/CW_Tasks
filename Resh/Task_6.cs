@@ -40,7 +40,7 @@ Note:
 If you are given an array with multiple answers, return the lowest correct index.
  */
 
-internal class Task_6
+internal static class Task_6
 {
     public static int FindEvenIndex(int[] arr)
     {
