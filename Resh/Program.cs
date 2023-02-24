@@ -13,7 +13,7 @@ namespace Resh
         static void Main(string[] args)
         {
 
-            Console.WriteLine(Task_4.HasSurvived(new int[] { 3, 5, 77 }, new int[] { 5, 5, 5, 5 }));
+            Console.WriteLine(Task_5.Order("is2 Thi1s T4est 3a"));
             Console.ReadKey();  
         }
 

@@ -15,36 +15,33 @@ Examples
 "App7Test"        -->  "app7_test"
 1                 -->  "1"
  */
-
-namespace Resh
+internal static class Task_3
 {
-    internal static class Task_3
+    public static string ToUnderscore(int str)
     {
-        public static string ToUnderscore(int str)
-        {
-            return str.ToString();
-        }
-
-        public static string ToUnderscore(string str)
-        {
-            string str3 = str.ToUpper();
-            string str4 = str.ToLower();
-            string str2 = "";
-            str2 += str4[0];
-
-            for (int i = 1; i < str.Length; i++)
-            {
-                if (str[i] == str3[i] && !Char.IsDigit(str[i]))
-                {
-                    str2 += "_" + str4[i];
-                }
-                else
-                {
-                    str2 += str[i];
-                }
-            }
-            return str2;
-        }
-
+        return str.ToString();
     }
+
+    public static string ToUnderscore(string str)
+    {
+        string str3 = str.ToUpper();
+        string str4 = str.ToLower();
+        string str2 = "";
+        str2 += str4[0];
+
+        for (int i = 1; i < str.Length; i++)
+        {
+            if (str[i] == str3[i] && !Char.IsDigit(str[i]))
+            {
+                str2 += "_" + str4[i];
+            }
+            else
+            {
+                str2 += str[i];
+            }
+        }
+        return str2;
+    }
+
 }
+

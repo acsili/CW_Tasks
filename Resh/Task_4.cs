@@ -34,83 +34,80 @@ attackers=[ 1, 3, 5, 7 ]   defenders=[ 2, 4, 0, 8 ]
 //return true
 */
 
-namespace Resh
+internal static class Task_4
 {
-    internal static class Task_4
+    public static bool HasSurvived(int[] attackers, int[] defenders)
     {
-        public static bool HasSurvived(int[] attackers, int[] defenders)
+        int attackersAlive = 0;
+        int defendersAlive = 0;
+
+        if (attackers.Length == defenders.Length)
         {
-            int attackersAlive = 0;
-            int defendersAlive = 0;
-
-            if (attackers.Length == defenders.Length)
+            for (int i = 0; i < attackers.Length; i++)
             {
-                for (int i = 0; i < attackers.Length; i++)
+                if (attackers[i] > defenders[i])
+                    attackersAlive++;
+                else if (attackers[i] < defenders[i])
+                    defendersAlive++;
+                else
                 {
-                    if (attackers[i] > defenders[i])
-                        attackersAlive++;
-                    else if (attackers[i] < defenders[i])
-                        defendersAlive++;
-                    else
-                    {
-                        attackersAlive++;
-                        defendersAlive++;
-                    }
+                    attackersAlive++;
+                    defendersAlive++;
                 }
             }
-            else if (defenders.Length > attackers.Length)
-            {
-                for (int i = 0; i < attackers.Length; i++)
-                {
-                    if (attackers[i] > defenders[i])
-                        attackersAlive++;
-                    else if (attackers[i] < defenders[i])
-                        defendersAlive++;
-                    else
-                    {
-                        attackersAlive++;
-                        defendersAlive++;
-                    }
-                }
-                defendersAlive += defenders.Length - attackers.Length;
-            }
-            else
-            {
-                for (int i = 0; i < defenders.Length; i++)
-                {
-                    if (attackers[i] > defenders[i])
-                        attackersAlive++;
-                    else if (attackers[i] < defenders[i])
-                        defendersAlive++;
-                    else
-                    {
-                        attackersAlive++;
-                        defendersAlive++;
-                    }
-                }
-                attackersAlive += attackers.Length - defenders.Length;
-            }
-
-
-            bool result = false;
-            if (defendersAlive > attackersAlive)
-            {
-                result = true;
-            }
-            if (attackersAlive == defendersAlive & attackers.Sum() > defenders.Sum())
-            {
-                result = false;
-            }
-            if (attackersAlive == defendersAlive & attackers.Sum() < defenders.Sum())
-            {
-                result = true;
-            }
-            if (attackersAlive == defendersAlive & attackers.Sum() == defenders.Sum())
-            {
-                result = true;
-            }
-
-            return result;
         }
+        else if (defenders.Length > attackers.Length)
+        {
+            for (int i = 0; i < attackers.Length; i++)
+            {
+                if (attackers[i] > defenders[i])
+                    attackersAlive++;
+                else if (attackers[i] < defenders[i])
+                    defendersAlive++;
+                else
+                {
+                    attackersAlive++;
+                    defendersAlive++;
+                }
+            }
+            defendersAlive += defenders.Length - attackers.Length;
+        }
+        else
+        {
+            for (int i = 0; i < defenders.Length; i++)
+            {
+                if (attackers[i] > defenders[i])
+                    attackersAlive++;
+                else if (attackers[i] < defenders[i])
+                    defendersAlive++;
+                else
+                {
+                    attackersAlive++;
+                    defendersAlive++;
+                }
+            }
+            attackersAlive += attackers.Length - defenders.Length;
+        }
+
+
+        bool result = false;
+        if (defendersAlive > attackersAlive)
+        {
+            result = true;
+        }
+        if (attackersAlive == defendersAlive & attackers.Sum() > defenders.Sum())
+        {
+            result = false;
+        }
+        if (attackersAlive == defendersAlive & attackers.Sum() < defenders.Sum())
+        {
+            result = true;
+        }
+        if (attackersAlive == defendersAlive & attackers.Sum() == defenders.Sum())
+        {
+            result = true;
+        }
+
+        return result;
     }
 }
