@@ -12,7 +12,15 @@ namespace Resh
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Task_7.Solution("ails", "fails"));
+            string[] srt = Task_8.dirReduc(new string[] { "NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST" });
+
+            foreach (string item in srt)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine();
+
             Console.ReadKey();  
         }
 
