@@ -30,7 +30,6 @@ internal static class Task_7
         }
 
         if (n == ending.Length) { return true; } else { return false; }
-
     }
 }
 
