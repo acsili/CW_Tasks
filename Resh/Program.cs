@@ -12,7 +12,7 @@ namespace Resh
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Task_9.orderWeight("103 123 4444 99 2000"));
+            Console.WriteLine(Task_10.Solve("GxghJhsD"));
 
 
             Console.ReadKey();  
