@@ -12,14 +12,8 @@ namespace Resh
     {
         static void Main(string[] args)
         {
-            string[] srt = Task_8.dirReduc(new string[] { "NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST" });
+            Console.WriteLine(Task_9.orderWeight("103 123 4444 99 2000"));
 
-            foreach (string item in srt)
-            {
-                Console.WriteLine(item);
-            }
-
-            Console.WriteLine();
 
             Console.ReadKey();  
         }
