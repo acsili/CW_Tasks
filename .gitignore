@@ -3,3 +3,6 @@ obj
 .vs
 Properties
 App.config
+.sln
+.config
+Program.cs
