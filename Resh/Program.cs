@@ -10,9 +10,11 @@ namespace Resh
 {
     class Program 
     {
+        
         static void Main(string[] args)
         {
-            Console.WriteLine(Task_10.Solve("GxghJhsD"));
+
+            Console.WriteLine(Task_12.Maskify(""));
 
 
             Console.ReadKey();  
