@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Resh
 {
     class Program 
-    { 
+    {
         public static bool comp(int[] a, int[] b)
         { 
             int pr = 0;
