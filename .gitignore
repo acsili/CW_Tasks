@@ -3,6 +3,8 @@ obj
 .vs
 Properties
 App.config
-.sln
+Resh.sln
 .config
 Program.cs
+App.config
+Resh.csproj
