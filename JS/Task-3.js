@@ -17,39 +17,39 @@ rgb(148, 0, 211) // returns 9400D3
 
 function rgb(r, g, b)
 {
-    let red = '';
-    let blue = '';
-    let green = '';
+    let red = ''
+    let blue = ''
+    let green = ''
 
     if (r < 1) 
-        red = '00';
+        red = '00'
     else if (r > 255) 
-        red = 'FF';
+        red = 'FF'
     else 
-        red = r.toString(16);
+        red = r.toString(16)
 
     if (g < 1)
-        green = '00';
+        green = '00'
     else if (g > 255) 
-        green = 'FF';
+        green = 'FF'
     else 
-        green = g.toString(16);
+        green = g.toString(16)
 
     if (b < 1) 
-        blue = '00';
+        blue = '00'
     else if (b > 255) 
-        blue = 'FF';
+        blue = 'FF'
     else 
-        blue = b.toString(16);
+        blue = b.toString(16)
 
-    if (red.length === 1) red = 0 + red;
+    if (red.length === 1) red = 0 + red
 
-    if (green.length === 1) green = 0 + green;
+    if (green.length === 1) green = 0 + green
     
-    if (blue.length === 1) blue = 0 + blue;
+    if (blue.length === 1) blue = 0 + blue
     
-    let res = red + green + blue;
-    return res.toUpperCase();
+    let res = red + green + blue
+    return res.toUpperCase()
 }
 
 console.log(rgb(12,44,66));
