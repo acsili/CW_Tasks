@@ -12,13 +12,14 @@ namespace Resh
 {
     class Program 
     {
-
         static void Main(string[] args)
         {
-            //Console.WriteLine("Lorem  ipsum  dolor  sit amet,".Length);
 
+            
+            Console.WriteLine();
 
-            Console.ReadKey();  
+            Console.Read();
+
         }
 
     }
