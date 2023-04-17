@@ -12,26 +12,10 @@ namespace Resh
 {
     class Program 
     {
-        public static string YAWIFI(params int[] numbers)
-        {
-            string yawifi = "";
-
-            IEnumerator numbersEnumerator = numbers.GetEnumerator();
-            while (numbersEnumerator.MoveNext()) 
-            {
-                int number = (int)numbersEnumerator.Current;
-                yawifi += (char)number;
-            }
-
-            return yawifi;
-        }
-
-        static string yawifi = YAWIFI(121, 97, 119, 105, 102, 105);
-
         static void Main(string[] args)
         {
 
-            Console.WriteLine(yawifi);
+            Console.WriteLine();
 
             Console.Read();
         }

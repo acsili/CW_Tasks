@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,9 +19,9 @@ Examples
 "(( @"     =>  "))((" 
 */
 
-internal static class Task_13
+public class Task_13
 {
-    public static string DuplicateEncode(string word)
+    public string DuplicateEncode(string word)
     {
         string chars = word.ToLower();
         string s = "";

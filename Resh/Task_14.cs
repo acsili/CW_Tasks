@@ -14,7 +14,7 @@ balancedParens(1) => ["()"]
 balancedParens(2) => ["()()","(())"]
 balancedParens(3) => ["()()()","(())()","()(())","(()())","((()))"]
  */
-internal class Task_14
+public class Task_14
 {
     public static List<string> BalancedParens(int n)
     {
