@@ -51,6 +51,7 @@
     <Compile Include="Task_12.cs" />
     <Compile Include="Task_13.cs" />
     <Compile Include="Task_14.cs" />
+    <Compile Include="Task_15.cs" />
     <Compile Include="Task_2.cs" />
     <Compile Include="Task_3.cs" />
     <Compile Include="Task_4.cs" />
