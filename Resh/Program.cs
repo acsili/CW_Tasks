@@ -14,10 +14,8 @@ namespace Resh
     {
         static void Main(string[] args)
         {
-            var c = new ItemCounter<string>(new string[] {"qwrr", "vdvd", "as", "as"});
-            Console.WriteLine(c.DistinctItems);
-            Console.WriteLine(c.GetCount("x"));
-            Console.WriteLine(c.HasItem("as"));
+
+            
 
             Console.Read();
         }
