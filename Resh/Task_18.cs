@@ -87,6 +87,7 @@ internal class Task_18
             firstTeam.Loss += 1;
             secondTeam.Win += 1;
         }
+
         else
         {
             firstTeam.Point += 1;
