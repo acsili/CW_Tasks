@@ -47,6 +47,5 @@ internal class Task_26
         }
         return 0;
     }
-
 }
 
